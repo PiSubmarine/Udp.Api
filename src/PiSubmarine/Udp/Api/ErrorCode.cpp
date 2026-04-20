@@ -17,13 +17,12 @@ namespace PiSubmarine::Udp::Api
 
             [[nodiscard]] std::string message(const int condition) const override
             {
-                constexpr std::array<std::string_view, 6> Messages{
+                constexpr std::array<std::string_view, 5> Messages{
                     "success",
                     "socket already bound",
                     "socket not bound",
                     "invalid endpoint",
-                    "payload too large",
-                    "receive queue overflow"};
+                    "payload too large"};
 
                 const auto index = static_cast<std::size_t>(condition);
                 if (index >= Messages.size())

@@ -9,8 +9,7 @@ namespace PiSubmarine::Udp::Api
         AlreadyBound = 1,
         NotBound,
         InvalidEndpoint,
-        PayloadTooLarge,
-        ReceiveQueueOverflow
+        PayloadTooLarge
     };
 
     [[nodiscard]] std::error_code make_error_code(ErrorCode errorCode) noexcept;

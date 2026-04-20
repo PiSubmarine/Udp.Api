@@ -6,8 +6,10 @@ project(${PISUBMARINE_MODULE_NAME}.Test LANGUAGES CXX)
 
 set(${PISUBMARINE_MODULE_NAME}.Test.Sources
         "PiSubmarine/Udp/Api/ErrorCodeTest.cpp"
-        "PiSubmarine/Udp/Api/ISocketMockTest.cpp"
-        "PiSubmarine/Udp/Api/ISocketTest.cpp")
+        "PiSubmarine/Udp/Api/IBindableTest.cpp"
+        "PiSubmarine/Udp/Api/ISenderTest.cpp"
+        "PiSubmarine/Udp/Api/IReceiverTest.cpp"
+        "PiSubmarine/Udp/Api/InterfaceMockTest.cpp")
 
 enable_testing()
 

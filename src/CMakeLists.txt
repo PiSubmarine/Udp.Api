@@ -6,7 +6,9 @@ add_library(${PISUBMARINE_MODULE_NAME}
         "../public/PiSubmarine/Udp/Api/Endpoint.h"
         "../public/PiSubmarine/Udp/Api/Datagram.h"
         "../public/PiSubmarine/Udp/Api/ErrorCode.h"
-        "../public/PiSubmarine/Udp/Api/ISocket.h")
+        "../public/PiSubmarine/Udp/Api/IBindable.h"
+        "../public/PiSubmarine/Udp/Api/ISender.h"
+        "../public/PiSubmarine/Udp/Api/IReceiver.h")
 target_include_directories(${PISUBMARINE_MODULE_NAME} PUBLIC "../public")
 PiSubmarineInitTarget(${PISUBMARINE_MODULE_NAME})
 
